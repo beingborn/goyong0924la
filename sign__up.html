@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+    <!-- css 영역 -->
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/default.css">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/korea__favicon.ico">
+
+
+    <!-- 로컬 jquery 스와이퍼 cdn -->
+    <link rel="stylesheet" href="style/jquery-ui.min.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+
+</head>
+<body>
+    <!-- 스킵 네비게이션 -->
+    <div class="skip__nav">
+        <a href="#main__content">본문 바로가기</a>
+    </div>
+
+    <div class="wrap btn__full__wrap" id="sub__wrap">
+        <!-- 헤더 -->
+        <!-- 헤더 -->
+        <header class="header">
+            <div class="inner">
+            <div class="header__btm">
+                <h1 class="logo">
+                    <a href="index(변경).html" title="노동조합 회계공시 시스템 메인페이지로 바로가기">
+                        <span class="blind">노동조합 회계공시시스템</span>
+                        <img src="img/slogan_H48.png" alt="메인 홈페이지로고">
+                    </a>
+                </h1>
+                <div class="mobile__logo">
+                    <img src="img/mobile__logo.png" alt="모바일 버전 로고">
+                </div>
+                <div class="right__icon__set">
+               
+                    <a href="login.html">
+                        <img src="img/icon20-1.png" alt="검색 아이콘">
+                        <span>로그인</span>
+                    </a>
+
+                    <!-- 전체메뉴 -->
+                    <a href="#" class="hamburger">
+                        <img src="img/hamburger__icon.png" alt="전체 메뉴 아이콘">
+                        <span>전체메뉴</span>
+                    </a>
+
+                    <a href="sign__up.html" class="sign__up">
+                        <img src="img/icon20-2.png" alt="회원가입 아이콘">
+                        <span>회원가입</span>
+                    </a>
+                 
+                </div>
+            </div>
+
+            <div class="header__gnb">
+                <div>
+                    <nav id="gnb1">
+                        <ul id="head_menu" class="top__menu">
+                            <li class="plus"> <a href="javascript:void(0);">시스템안내
+                                <!-- <span class="sr_only">닫기</span> -->
+                            </a>
+                                <div class="sub__menu">
+                                    <ul>
+                                        <li class="plus"> <a href="javascript:void(0);">회계공시시스템이란</a>
+                                            <div class="dep3"> <strong class="dep3__title"> <a href="accn__desc.html">회계공시시스템이란</a> </strong>
+                                            
+                                            </div>
+                                        </li>
+                                        <li class="plus"> <a href="javascript:void(0);">주요회계공시항목설명</a>
+                                            <!-- dep3 오른쪽 영역 -->
+                                            <div class="dep3"> <strong class="dep3__title"> <a href="main__accn__desc.html">주요회계공시항목설명</a> </strong>
+                                          
+                                            </div>
+                                        </li>
+                                        <li class="plus"> <a href="javascript:void(0);">공지사항</a>
+                                            <!-- dep3 오른쪽 영역 -->
+                                            <div class="dep3"> <strong class="dep3__title"> <a href="notice.html">공지사항</a> </strong>
+                 
+                                            </div>
+                                        </li>
+                                        <li class="plus"> <a href="javascript:void(0);">자주묻는질문</a>
+                                            <!-- dep3 오른쪽 영역 -->
+                                            <div class="dep3"> <strong class="dep3__title"> <a href="faq.html">자주묻는질문</a></strong>
+                                            </div>
+                                        </li>
+                                   
+                                    </ul>
+                                </div>
+                            </li>
+        
+                            <li class="plus"> <a class="open--depth-2" href="javascript:void(0);">회계공시열람
+                            </a>
+                                <div class="sub__menu">
+                                    <ul>
+                                        <li class="plus"> <a href="javascript:void(0);">회계공시열람</a>
+                                            <div class="dep3"> <strong class="dep3__title"> <a href="accn__open.html">회계공시열람</a> </strong>
+                                                <ul>
+                              
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="plus"> <a href="javascript:void(0);">회계공시여부조회</a>
+                                            <div class="dep3"> <strong class="dep3__title"> <a href="javascript:void(0);">회계공시여부조회</a> </strong>
+                                                <ul>
+                        
+                                                </ul>
+                                            </div>
+                                        </li>
+                                  
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="plus"> <a class="open--depth-2" href="javascript:void(0);">회계공시등록
+                            </a>
+                                <div class="sub__menu">
+                                    <ul>
+                                        <li class="plus"> <a href="javascript:void(0);">회계공시등록</a>
+                                            <div class="dep3"> <strong class="dep3__title"> <a href="public__register.html">회계공시등록</a> </strong>
+                                                <ul>
+                              
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="plus"> <a href="javascript:void(0);">가맹노조산하조직관리</a>
+                                            <div class="dep3"> <strong class="dep3__title"> <a href="union__management.html">가맹노조산하조직관리</a> </strong>
+                                                <ul>
+                    
+                                                </ul>
+                                            </div>
+                                        </li>
+                                  
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            </div>
+        </header>
+
+          <!-- 컨텐츠 -->
+
+
+       <main class="content main__content report__content" style="padding-bottom: 40px;">
+        <div class="visual__bg">
+            <div class="inner">
+              <div class="visual__text">
+                <h2>회원가입</h2>
+                <p>노동조합 회계공시시스템 첨부파일 변경 화면입니다.</p>
+              </div>
+            </div>
+          </div>
+        <div class="inner">
+            <nav class="breadcrumb" style="padding-top: 2.4rem;">
+                <ol class="path">
+                    <li class="home"><a href="#" class="txt">홈</a></li>
+                    <li><a href="#" class="txt">로그인</a></li>
+                    <li><a href="#" class="txt">회원가입</a></li>
+                </ol>
+                </nav>
+
+                <div class="flex__title table__title__wrap">
+                    <h2 class="table__title">회원 정보 입력</h2>
+                    <div class="must__help__message"> 
+                    <span><span style="color: #FE5555;">*</span> 필수 입력항목입니다.</span>
+                    </div>
+
+                </div>
+
+            <!-- 회원 가입 테이블 -->
+            <form action="POST" id="sign__up--form">
+                <div class="sign__up__table__wrap table__template__horizontal">
+                    <div class="form__table border-top-large">
+                        <table>
+                            <caption>사용자용 회원가입 폼입니다.</caption>
+                            <tr>
+                                <th>
+                                    <span class="must__type">
+                                        <label for="id">
+                                            아이디
+                                        </label>
+                                    </span>
+                                </th>
+                                <!-- <td class="td--flex">
+                                    <div class="td--width with__submit">
+                                        <input id="id" type="text" placeholder="영문 소문자로 시작하는 6자 이상 15자 이하 영문 소문자 또는 숫자">
+                                        <button class="btn__check__dup bg--black-00" type="button">중복체크</button>
+                                    </div>
+                                </td> -->
+                                <td>
+                                    <div class="td__container">
+                                        <input type="text" value="" id="example22222" class="width--100" placeholder="아이디를 입력하세요.">
+                                        <button type="button" class="btn__check__dup bg--transparent-00" style="background: none;">중복체크</button>
+                                    </div>
+                                </td>
+                        
+
+
+
+
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="must__type">
+                                        <label for="pw">
+                                            비밀번호
+                                        </label>
+                                    </span>
+                                </th>
+                                <td>
+                                    <div class="td__container secret__Check"> <!-- 현재 relative 대상 -->              
+                                        <input class="password__input" id="pw" type="password" placeholder="비밀번호를 입력하세요." maxlength="20">
+                                        <button type="button" class="btn icon__pw-visible">
+                                            <img src="img/icon__see.svg" alt="비밀번호 보이기" class="show__icon">
+                                        </button>
+                                </div>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <th>
+                                    <span class="must__type">
+                                        <label for="pwcheck">
+                                            비밀번호 확인
+                                        </label>
+                                    </span>
+                                </th>
+                                <td>
+                                    <div class="td__container secret__Check" id="pwLength">
+                                        <input class="password__input" id="pwcheck" type="password" placeholder="변경할 비밀번호를 입력하세요."  maxlength="20">
+                                        <button type="button" class="btn icon__pw-visible">
+                                            <img src="img/icon__see.svg" alt="비밀번호 보이기" class="show__icon">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+    
+                                    <label for="css" class="txt--l">
+                                        노동조합 명칭
+                                        <br class="onlyMo">
+                                        <span class="must__type"> (또는 산하조직)</span>
+                                    </label>
+                                </th>
+                                <td>
+                                    <div class="td__container">
+                                        <input type="text" value="" id="css" class="width--100" placeholder="제주특별자치도공무직노동조합">
+                                        <button type="button" class="btn__check__dup bg--transparent-00" style="background: none;">중복체크</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="name1">
+                                        노동조합약어명
+                                    </label>
+                                </th>
+                                <td>
+                                    <div class="td__container">
+                                        <input id="name1" type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="s1-1">
+                                        조직형태
+                                    </label>
+                                </th>
+                                <td>
+                                    <div class="td__container">
+                                        <select name="s-1-1" id="s1-1" class="select--no--style select__renew">
+                                            <option value="선택">선택</option>
+                                        </select>
+                                        <select name="s-2-1" id="s2-1" class="select--no--style select__renew">
+                                            <option value="선택">선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="d23" class="txt--l">
+                                        사업자등록번호
+                                        <br class="pcOnly">
+                                        <span class="must__type"> (고유번호증번호 등)</span>
+                                    </label>
+                                </th>
+                                <td>
+                                    <div class="td__container">
+                                        <input id="d23" type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="category23233"> 상급단체의 명칭</label>
+                                   
+                                </th>
+                                <td colspan="5">
+                                    <!-- 
+                                     버튼 유무에 따라 자동으로 나머지가 정렬되게 제작 
+                                     클래스 제어 상관없이 버튼 생성 삭제만으로 두 타입 제어 가능.
+                                     select 대신 input 태그를 넣어도 자동으로 넓이 맞출 수 있도록 제작
+                                      -->
+                                    <div class="flex--box">
+                                        <!-- <button type="button" class="btn__select width--20 mg--10-r mg--10-l">선택입력</button> -->
+                                        <div class="td__container flex--grow-100">
+                                            <select name="category" id="category23233" class="select--no--style select__renew">
+                                                <option value="전체">총연합단체 선택</option>
+                                            </select>
+                                            <select name="category" id="category2323dd" class="select--no--style select__renew">
+                                                   <option value="전체">연합단체 선택</option>
+                                            </select>
+                                            <select name="category" id="category2323ee" class="select--no--style select__renew">
+                                                <option value="전체">단위노동조합 선택</option>
+                                            </select>
+                
+                                            <!-- <input type="text" id="1" placeholder="1번 인풋"> -->
+                                            <!-- <input type="text" id="2" placeholder="2번 인풋"> -->
+                                            <!-- <input type="text" id="3" placeholder="3번 인풋"> -->
+                
+                                            <!-- 상위 클래스가 input의 넓이를 자동으로 맞춰줍니다. html 태그만 생성 삭제 하시면 됩니다. -->
+                
+                                            <select name="category" id="categoraa" class="select--no--style select__renew"> <option value="전체">지부 선택</option> </select>
+                                                <select name="category" id="categorbb" class="select--no--style select__renew"> <option value="전체">지회 선택</option> </select>
+                                                <select name="category" id="categorcc" class="select--no--style select__renew"> <option value="전체">분회 선택</option> </select>
+                                            
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>     
+                            <tr>
+                                <th>
+                                    <span class="must__type">
+                                        <label for="name3">
+                                            대표자
+                                        </label>
+                                    </span>
+                                </th>
+                                <td>
+                                    <div class="td__container">
+                                        <input id="name3" type="text" >
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="name4">
+                                        설립연월일
+                                    </label>
+                                </th>
+                                <td>
+                                    <div class="td__container" style="align-items: center;">
+                                        <div class="td__calender">
+                                            <input type="text" id="testPicker" maxlength="10" placeholder="YYYY.MM.DD">
+                                        </div>
+                                        <label for="testPicker" class="calender__icon mg--10-l"></label>
+                                        <!-- <label for="testPicker" class="calender__icon--mo mg--10-l"></label> -->
+                                    </div>
+                                </td>
+
+                                <script>
+                            
+                     
+                        $(document).ready(function() {   
+                        // init();
+            
+    		            /*Date Picker*/
+    		            var dateFormat = "yymmdd",
+    	                from = $( '#testPicker' ).datepicker({
+    	                dateFormat : "yymmdd",
+                        //     	          defaultDate: "+1w",
+    	                changeMonth: true,
+    	                changeYear : true,
+    	                yearRange : 'c-80y:c',
+    	                numberOfMonths: 1
+    	                });
+    	 
+                        function getDate( element ) {
+                                var date;
+                                try {
+                                    date = $.datepicker.parseDate( dateFormat, element.value );
+                                } catch( error ) {
+                                    date = null;
+                                }
+                                return date;
+                            }
+    	    
+    	    
+    		$.datepicker.setDefaults({
+    			closeText : "닫기",
+    			currentText : "오늘",
+    			prevText : "이전 달",
+    			nextText : "다음 달",
+    			monthNames : ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+    			monthNamesShort : ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+    			dayNames : ['일','월','화','수','목','금','토'],
+    			dayNamesShort : ['일','월','화','수','목','금','토'],
+    			dayNamesMin : ['일','월','화','수','목','금','토'],
+    			weekHeader : "주",
+    			yearSuffix : "년",
+    		});
+        })
+
+                                </script>
+
+
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="d-4-1">
+                                        회계기간
+                                    </label>
+                                </th>
+                                <td>
+                                    <div class="td__container">
+                                        <div class="td__date">
+                                            <select name="d-4-1" id="d-4-1" class="s-select--no--style select__renew">
+                                                <option value="월 선택">월</option>
+                                                <option value="1">1 월</option>
+                                                <option value="2">2 월</option>
+                                                <option value="3">3 월</option>
+                                                <option value="4">4 월</option>
+                                                <option value="5">5 월</option>
+                                                <option value="6">6 월</option>
+                                                <option value="7">7 월</option>
+                                                <option value="8">8 월</option>
+                                                <option value="9">9 월</option>
+                                                <option value="10">10 월</option>
+                                                <option value="11">11 월</option>
+                                                <option value="12">12 월</option>
+                                            </select>
+                                            <select name="d-4-2" id="d-4-2" class="s-select--no--style  select__renew">
+                                                <option value="&nbsp;">일</option>
+                                            </select>
+                                            <span>~</span>
+                                            <select name="d-4-3" id="d-4-3" class="s-select--no--style  select__renew">
+                                                <option value="&nbsp;">월</option>
+                                                <option value="1">1 월</option>
+                                                <option value="2">2 월</option>
+                                                <option value="3">3 월</option>
+                                                <option value="4">4 월</option>
+                                                <option value="5">5 월</option>
+                                                <option value="6">6 월</option>
+                                                <option value="7">7 월</option>
+                                                <option value="8">8 월</option>
+                                                <option value="9">9 월</option>
+                                                <option value="10">10 월</option>
+                                                <option value="11">11 월</option>
+                                                <option value="12">12 월</option>
+                                            </select>
+                                            <select name="d-4-4" id="d-4-4" class="s-select--no--style  select__renew">
+                                                <option value="&nbsp;">일</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="name5">
+                                        조합원 수
+                                    </label> 
+                                </th>
+                                <td>
+                                    <div class="td__container">
+                                        <input id="name5" type="text" value="0">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="must__type">
+                                        <label for="name6">
+                                            담당자명
+                                        </label>
+                                    </span>
+                                </th>
+                                <td>
+                                    <div class="td__container">
+                                        <input id="name6" type="text" >
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="must__type">
+                                        <label for="name7">담당자 이메일</label>                                       
+                                    </span>
+                                </th>
+                                <td>
+                                    <div class="td__container">
+                                        <input id="name7" type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="must__type">
+                                        <label for="name8">유선연락처</label>       
+                                    </span>
+                                </th>
+                                <td>
+                                    <div class="td__container">
+                                        <input id="name8" type="text" >
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="name9">
+                                        핸드폰
+                                    </label>
+                                </th>
+                                <td>
+                                    <div class="td__container">
+                                        <input id="name9" type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="rdo_22-1">
+                                        수신동의 여부
+                                    </label>
+                                </th>
+                                <td class="radio__wrap chk__area flex--box-c">
+                                    <div class="td__container">
+                                        <div class="flex--box">
+                                            <div class="mg--10-r">
+                                                <input type="radio" name="rdo_22-1" id="rdo_22-2">
+                                                <label for="rdo_22-2">동의</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" name="rdo_22-1" id="rdo_22-3">
+                                                <label for="rdo_22-3">비동의</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="name10">
+                                        소재지
+                                    </label>
+                                </th>
+                                <td>
+                                    <div class="td__container">
+                                        <input id="name10" type="text" >
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="must__type">
+                                        <label for="profile_pisca">
+                                            파일첨부
+                                        </label>
+                                    </span>
+                                </th>
+                           
+                                
+                                <td>
+                                    <div class="td__container file__select__container" id="pwLength">
+                                        <div class="preview flex--box-c">
+                                            <p class="upload__file__name">선택된 파일없음</p>
+                                        </div>
+                                        <label class="btn__file__select bg--transparent-00" for="profile_pic">파일선택</label>
+                                        <label class="btn__file__select--mo bg--transparent-00" for="profile_pic"></label>
+                                        <input type="file" class="file__post" id="profile_pic" name="profile_pic" style="opacity: 0; width: 0px;">
+                                </div>
+                                </td>
+                              
+                            </tr>
+    
+    
+    
+    
+     
+                        </table>
+                    </div>
+                </div>
+            </form>
+
+
+            <script>
+                        $(document).ready(function(){                      
+                        $('.secret__Check').each(function(){
+                        const pwInput = $(this).find('.password__input')
+                        const showButton = $(this).find('.icon__pw-visible')
+                        const showIcon = $(this).find('.show__icon')
+
+                        showButton.on('click', function() {
+                        const type = pwInput.attr('type') === 'password' ? 'text' : 'password';
+                        pwInput.attr('type', type);
+
+                        const iconSrc = type === 'password' ? 'img/icon__see-visible.svg' : 'img/icon__see.svg';
+                        showIcon.attr('src', iconSrc);
+                        });
+                        })   
+                        })
+
+
+
+
+            </script>
+
+
+        
+            <div class="must__help__message">
+                <p>
+                    <span style="color: #FE5555;">*</span> 노동조합 또는 산하조직 대표자 명의의 회원가입 신청 공문을 스캔하여 파일로 첨부합니다.
+                </p>
+                <p>(공문에"노동조합 회계공시시스템 회원가입을 신청한다"는 의사를 명시하고 대표자 직인 날인, 파일은 1개만 첨부가능)</p>
+            </div>
+
+
+
+         
+
+
+
+                             <!-- 노동조합규약 -->
+                             <div class="lnb__title flex__title" style="margin-top: 2.6rem;">
+                                <h2>노동조합 규약</h2>
+                            </div>
+                             <div class="union__code border-top-large" >
+                                <div class="upload__manager">
+                                    <form action="POST">
+                                        <div class="form__head flex--box-c border--btm">
+                                            <div class="form-title" style="border-right: 1px solid #ddd;">
+                                                <span>규약명</span>
+                                            </div>
+                                            <div class="form-title-file flex--grow-100 txt--c bg--f9f9 height--100">
+                                                <span>첨부파일</span>
+                                            </div>
+                                        </div>
+                
+                                        <div class="form__body">
+
+                                            <div class="form__row flex--box-c">
+                                                <div class="td__container" style="border-right: 1px solid #ddd;">
+                                                    <input type="text" name="rule_name[]" placeholder="" class="input__text" style="padding: 0;"/>
+                                                </div>
+                
+                
+
+                                                <div class="td__container file__select__container flex--grow-100" id="pwLength">
+                                                    <div class="preview flex--box-c">
+                                                        <p class="upload__file__name">선택된 파일없음</p>
+                                                        <label class="btn__file__select--mo bg--transparent-00" for="profile_pics2"></label>
+
+                                                    </div>
+                                                    <label class="btn__file__select bg--transparent-00" for="profile_pics2">파일선택</label>
+                                                    <input type="file" class="file__post" id="profile_pics2" name="profile_pics2" style="opacity: 0; width: 0px;">
+                                                    <button type="button" class="btn__add bg--black-00" style="margin-left: auto;">+</button>
+                                                </div>
+
+                                            </div>
+                                            <!-- 두번째 줄 -->
+                                            <div class="form__row flex--box-c">
+                                                <div class="td__container" style="border-right: 1px solid #ddd;">
+                                                    <input type="text" name="rule_name[]" placeholder="" class="input__text" style="padding: 0;" />
+                                                </div>
+                
+
+<!--                         
+                                                <div class="form-content form-wrap">
+                                                    <div class="flex--box-c">
+                                                        <div class="preview flex--box-c pd--10-m mg--10-r">
+                                                          <p></p>
+                                                        </div>
+                                                        <label class="mg--10-r btn__file__select bg--transparent-00" for="profile_ps">파일선택</label>
+                                                        <label class="btn__file__select--mo bg--transparent-00" for="profile_pic"></label>
+                                                        <input type="file" class="file__post" id="profile_ps" name="profile_ps" style="opacity: 0; width: 0px;">
+                                                    </div>
+                                                    <button type="button" class="btn__add bg--black-00" style="margin-left: auto;">-</button>
+                                                </div> -->
+                                                <div class="td__container file__select__container flex--grow-100" id="pwLength">
+                                                    <div class="preview flex--box-c">
+                                                        <p class="upload__file__name">선택된 파일없음</p>
+                                                        <label class="btn__file__select--mo bg--transparent-00" for="profile_pics3"></label>
+
+                                                    </div>
+                                                    <label class="btn__file__select bg--transparent-00" for="profile_pics3">파일선택</label>
+                                                    <input type="file" class="file__post" id="profile_pics3" name="profile_pics3" style="opacity: 0; width: 0px;">
+                                                    <button type="button" class="btn__add bg--black-00" style="margin-left: auto;">-</button>
+                                                </div>
+                                                
+
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="function__group">
+                                  <!-- 
+                                아래 버튼 색상을 변경하시려면 bg--색상-00  부분에서 색상의 클래스명을 변경해주시면 됩니다.
+                                색상 목록 : blue, black, red, green, gray
+
+                                ex) 회색 버튼 <button type="button" class= "btn__control bg--gray-00">조회</button> 
+                                -->
+                                <button type="button" class="btn__control bg--blue-00">저장</button>
+                            </div>
+        </div>
+       </main>
+
+        <!-- 푸터  -->
+          <footer>
+            <div class="footer__bottom" style="background-color: #F0F0F0;">
+                <div class="inner">
+                    <div class="footer__logo">
+                        <img src="img/slogan_H48.png" alt="하단 로고">
+                    </div>
+                    <div class="mobile__logo">
+                        <img src="img/mobile__logo.png" alt="하단 모바일 로고">
+                    </div>
+                    <div class="footer__flex">
+                        <div class="footer__info">
+                            <p class="location">30117 세종특별자치시 한누리대로 422 정부세종청사 11동 고용노동부(044-202-7828)</p>
+                            <p class="copyright">Copyright(c)Ministry of Employment and Labor. All rights reserved.</p>
+                        </div>
+
+                    </div>
+            
+                    
+                </div>
+                
+            </div>
+        </footer>
+    <div class="gnb__bg"></div>
+        </div>
+
+    
+
+    <!-- js 파일 -->
+    <script src="js/default.js"></script>
+    <script src="js/manage__accounting.js"></script>
+    <script>
+
+        // 임시로 radio 체크
+        $(document).ready(function(){
+            $('.radio__wrap input[type="radio"]').eq(0).first().prop('checked', true)
+
+        })
+
+        $(document).ready(function(){
+
+            $('.btn__add').click(function(){
+                // 추가 줄 생성
+                const newRow = $('<div class="form__row flex--box-c"></div>')
+                
+                /** 임시 코드 */
+                const newRowDesc = $(        
+                `
+                                <div class="form-wrap flex--center-s" style="width: 15.38%; border-right: 1px solid #ddd;">
+                                    <input type="text" name="rule_name[]" placeholder="" class="input__text" />
+                                </div>
+
+                                               <div class="form-content form-wrap">
+
+                                                    <div class="flex--box-c">
+                                                        <div class="preview flex--box-c pd--10-m mg--10-r">
+                                                          <p></p>
+                                                        </div>
+                                                        <label class="mg--10-r btn__file__select bg--transparent-00" for="profile_pics2">파일선택</label>
+                                                        <!-- <div>
+                                                          <button class="btn__upload bg--blue-00">업로드</button>
+                                                        </div> -->
+                                                        <input type="file" class="file__post" id="profile_pics2" name="profile_pics2" style="opacity: 0; width: 0px;">
+                                                    </div>
+                                                    <button type="button" class="btn__remove bg--black-00" style="margin-left: auto;">-</button>
+                                                </div>
+                `
+                )
+
+                
+                // 추가 줄 내용 삽입
+                newRow.append(newRowDesc)
+
+                // 내용에 줄 추가
+                $('.form__body').append(newRow);
+
+            })
+        })
+
+        // 가까운 row 삭제
+        $('.form__body').on('click', '.btn__remove', function() {
+            $(this).closest('.form__row').remove();
+        });  
+                            // change 발생한 input을 특정
+                            // 임시 코드 : 파일 업로드 표시
+                            
+                            
+                            let inputs = $(".file__post");
+                                    let preview = $(".preview");
+                                    
+                                    inputs.css({
+                                    "opacity": 0,
+                                    "width": 0
+                                    });
+                                    function displayFileNames(event){
+
+                          
+
+                                let currentInput = $(event.target);
+
+                                let index = inputs.index(currentInput)
+
+                                let previewBox = $(preview[index])
+
+                                previewBox.empty();  // preview 내 모든 자식 요소 제거
+
+                                const currentFile = currentInput[0].files;  // jQuery 객체에서 DOM 요소로 접근
+                            
+                                if (currentFile.length === 0) {
+                                const para = $("<span>").text("아무파일도 입력되지 않았어요");
+                                previewBox.append(para);
+                                } else {
+                                const fileList = $("<div>");
+                                previewBox.append(fileList);
+
+                                for (const file of currentFile) {
+                                const listItem = $("<p>").text(file.name).addClass('upload__file__name');
+                                fileList.append(listItem);
+                                }
+                            }
+                            }
+
+                            inputs.on('change', displayFileNames);
+
+    </script>
+
+
+</body>
+</html>
