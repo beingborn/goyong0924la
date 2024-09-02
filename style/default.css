@@ -4131,12 +4131,13 @@ select {
 
 #sub__wrap .content .visual__bg .visual__text h2 {
   font-size: 3.2rem;
-  margin-bottom: 2.8rem;
+  margin-bottom: 1.2rem;
   white-space: nowrap;
 }
 
 #sub__wrap .content .visual__bg .visual__text p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  
 }
 
 .mobile__tab {
